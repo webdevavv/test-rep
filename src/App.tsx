@@ -10,11 +10,8 @@ function App() {
         const perm = await Notification.requestPermission()
 
         if (perm === "granted") {
-
-           const notif:Notification =  new Notification("hi how are u?")
-            notif.addEventListener("error",  () => {
-                alert("сообщение не может быть отправлено")
-            })
+           new Notification("hi how are u?")
+            alert("hello")
         }
 
 
