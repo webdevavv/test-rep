@@ -10,8 +10,9 @@ function App() {
         const perm = await Notification.requestPermission()
 
         if (perm === "granted") {
-           new Notification("hi how are u?")
-            alert("hello")
+           setTimeout(() => {
+               new Notification("hi how are u?");
+           }, 5000)
         }
 
 
