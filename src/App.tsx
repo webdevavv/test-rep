@@ -11,8 +11,13 @@ function App() {
 
         if (perm === "granted") {
 
-            new Notification("hi how are u?")
+           const notif:Notification =  new Notification("hi how are u?")
+            notif.addEventListener("error",  () => {
+                alert("сообщение не может быть отправлено")
+            })
         }
+
+
     }
 
     return (
